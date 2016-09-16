@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">RelativeLayout</string>
+    <string name="view4">View4</string>
 </resources>

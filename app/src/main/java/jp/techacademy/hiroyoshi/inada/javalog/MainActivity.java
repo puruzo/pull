@@ -1,24 +1,20 @@
 package jp.techacademy.hiroyoshi.inada.javalog;
 
 
-import android.util.Log;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-class Human extends Animal  {
-    // 変数
-    String name;      // 名前
-    int age;    // 年齢
+public class MainActivity extends AppCompatActivity {
 
-    // コンストラクタ
-    public Human (String name, int age {
-        this.name = name;
-        this.age = age;
-    }
-
-    // メソッド
-    public void say() {
-        Log.d("javatest", "ワンワン");
-
-
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+      Human human = new Human("ポチ", 3,"sanpo");
+        human.say();
+        human.think();
     }
 }
+
+
+
